@@ -7,8 +7,8 @@
     </HEAD>
 <BODY>
      <header class="main-header">
-         
-              <a class="main-heade-logo">
+
+              <a class="main-heade-logo" href="index.html">
                   <img src="img/logo.png" width="154" height="64" alt="логотип Глейси">
               </a>
               <nav class="main-navigation">
@@ -19,19 +19,60 @@
                       </ul>
                       <ul class="user-navigation">
                           <li><a href="seach.html"></a></li>
-                          <li><a href="entry.html">Вход</a></li>
+                          <li><a href="login.html">Вход</a></li>
                           <li><a href="basket.html">2 товара</a></li>
                       </ul>
 								 </nav>
                       <p class="time-work">с 10 до 20,ежедневно</p>
                       <p class="phone"><a href="contacts.html">8 812 450 25 25</a></p>
-                  
-              
-         
+
+
+
     </header>
     <main class="container">
+      <ul class="breadcrumbs">
+
+        <li><a href="index.html">главная</a></li>
+        <li><a href="index.html">каталог</a></li>
+        <li class="breadcrumbs-current">сливочное</li>
+      </ul>
 			<h2>Сливочное мороженое</h2>
-          <!--form-->
+
+  <form action="" method="post">
+        <p>сортировка</p>
+            <select name="top-ice">
+      <option>по популярности</option>
+      </select>
+
+        <p>Цена 100руб-500руб</p>
+      <input type="range" min="100" max="500">
+        <p>Жирность</p>
+        <label> <input type="radio" name="bold-ice-cream" value="0%" >0%</label>
+        <label> <input type="radio" name="bold-ice-cream" value="<10%" >до10%</label>
+        <label> <input type="radio" name="bold-ice-cream" value="<30%" >до30%</label>
+        <label> <input type="radio" name="bold-ice-cream" value=">30%" >выше30%</label>
+        <p>Наполнители</p>
+
+
+        <input type="checkbox" checked id="chockolate">
+         <label for="chockolate">шоколадные</label>
+
+        <input type="checkbox" checked id="sugar">
+         <label for="sugar">сахарные присыпки</label>
+
+        <input type="checkbox" id="fruits">
+         <label for="fruits">фрукты</label>
+
+        <input type="checkbox" id="syrups">
+         <label for="syrups">сиропы</label>
+
+        <input type="checkbox" id="jam">
+         <label for="jam">джемы</label>
+
+        <button class="button">Применить</button>
+
+     </form>
+
 			<div class="catalog-content">
           <ul class="catalog-items" >
               <li class="item"><img src="img/1.jpg" width="267"  height="267" alt="ice">
@@ -39,25 +80,25 @@
 								  <span>/кг</span>
                   <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
 						  </li>
-            
+
               <li class="item">
-                      
+
                       <img src="img/2.jpg" width="267"  height="267"   alt="ice">
                       <span>380₽</span>
                       <span>/кг</span>
                       <p>Сливочно-кофейное с кусочками шоколада</p>
                   </li>
-                  
+
                   <li class="item">
-                      
+
                       <img src="img/3.jpg" width="267"  height="267"   alt="ice">
                       <span>355₽</span>
                       <span>/кг</span>
                       <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
                   </li>
-                  
+
                   <li class="item">
-                     
+
                       <img src="img/4.jpg" width="267"  height="267"  alt="ices">
                       <span>415₽</span>
                       <span>/кг</span>
@@ -67,12 +108,12 @@
                    <span>325₽</span>
 								   <span>/кг</span>
                    <p>Сливочное с брусничным джемом</p></li>
-						
+
               <li class="item"><img src="img/6.jpg" width="267"  height="267"  alt="ice">
                    <span>410Р₽</span>
 								   <span>/кг</span>
 								<p>Сливочно-черничное с цельными ягодами черники</p></li>
-						
+
               <li class="item"><img src="img/7.jpg" width="267"  height="267"  alt="ice">
                    <span>375₽</span>
 								   <span>/кг</span>
@@ -97,35 +138,36 @@
                    <span>420₽</span>
 								   <span>/кг</span>
                    <p>Сливочное с мятным сиропом</p></li>
-               
+
           </ul>
 			</div>
-			<ul class="pagination-list">
-              <li class="pagination-item-current"><a href=""></a></li>
-              <li class="pagination-item"><a href=""></a></li>  
-              <li class="pagination-item"><a href=""></a></li>  
-				      <li class="pagination-item"><a href=""></a></li>  
-              <li class="pagination-item"><a href=""></a></li> 
-				      <li class="pagination-item"><a href=""></a></li> 
-          </ul>
+			  <button class="button active">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">></button>
       </main>
-	
+
 	<footer class="main-footer">
           <div class="footer-social">
               <ul>
                   <li><a class="social-button" href="#">Твиттер</a></li>
                   <li><a class="social-button" href="#">инстаграмм</a></li>
                   <li><a class="social-button" href="#">фейсбук</a></li>
-                  <li><a class="social-button" href="#"></a>в контакте</li>
+                <li><a class="social-button" href="#">в контакте</a></li>
               </ul>
           </div>
           <div class="documentation">
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
+              <a href="index.html"></a>
+              <a href="index.html"></a>
+              <a href="index.html"></a>
+              <a href="index.html"></a>
           </div>
-          <div class="footer-logo"><a href="#"></a></div>
+     <div class="footer-logo"><a href="https://echo.htmlacademy.ru">
+				 <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="логотип HTML Academy">
+				 </a>
+     </div>
           <div class="copiright">Сделано в HTML Academy2017
           </div>
              </footer>
