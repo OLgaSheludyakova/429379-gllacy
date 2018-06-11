@@ -17,11 +17,46 @@
                           <li><a href="price.html">Доставка и оплата</a></li>
                           <li><a href="about.html">О Компании</a></li>
                       </ul>
-                      <ul class="user-navigation">
-                          <li><a href="seach.html"></a></li>
-                          <li><a href="login.html">Вход</a></li>
-                          <li><a href="basket.html">2 товара</a></li>
-                      </ul>
+                       <button class="button" type="button" aria-label="поиск"></button>
+                                <section class="modal modal-seach">
+                                    <h4 class="visually-hidden">модальное окно поиск</h4>
+                                  <form action="https://echo.htmlacademy.ru" method="post">
+                                      <label for="seach-field" class="visually-hidden">поиск</label>
+                                       <input type="text" name="seach" id="seach-field" placeholder="что ищем?">
+                                  </form>
+                                </section>
+
+                          <button class="button" type="button" aria-label="вход">Вход</button>
+                                <section class="modal modal-login">
+                                  <h4 class="visually-hidden">модальное окно вход</h4>
+                                     <form action="https://echo.htmlacademy.ru" method="post">
+
+                                         <p> <label for="login-field" class="visually-hidden">ваш логин</label>
+                                         <input type="text" name="login" id="login-field" placeholder="электронная почта"></p>
+
+                                           <p><label for="password-field" class="visually-hidden">ваш пароль</label>
+                                           <input type="text" name="password" id="password-field" placeholder="пароль"></p>
+
+                                           <button class="button" type="submit">Войти</button>
+
+                                            <a href="https://echo.htmlacademy.ru">Забыли пароль</a>
+                                            <a href="https://echo.htmlacademy.ru">Новая регистрация</a>
+                                      </form>
+                                 </section>
+
+                          <button class="button" type="button" aria-label="корзина">пусто</button>
+
+                             <section class="modal modal-basket">
+                                   <h4 class="visually-hidden">модальное окно корзина</h4>
+                                 <form action="https://echo.htmlacademy.ru" method="post">
+                                  <label for="ice-cream" class="visually-hidden">заказ</label>
+                                  <input type="text" name="ice-cream" id="ice-cream">
+                                        <hr>
+                                          итого
+                                    <button class="button">оформить заказ</button>
+                                 </form>
+                             </section>
+
 								 </nav>
                       <p class="time-work">с 10 до 20,ежедневно</p>
                       <p class="phone"><a href="contacts.html">8 812 450 25 25</a></p>
@@ -32,8 +67,8 @@
     <main class="container">
       <ul class="breadcrumbs">
 
-        <li><a href="index.html">главная</a></li>
-        <li><a href="index.html">каталог</a></li>
+        <li><a href="index.html" aria-label="ссылка на главную">главная</a></li>
+        <li><a href="index.html" aria-label="ссылка на каталог">каталог</a></li>
         <li class="breadcrumbs-current">сливочное</li>
       </ul>
 			<h2>Сливочное мороженое</h2>
@@ -69,7 +104,7 @@
         <input type="checkbox" id="jam">
          <label for="jam">джемы</label>
 
-        <button class="button">Применить</button>
+        <button class="button" aria-label="выбор мороженого">Применить</button>
 
      </form>
 
@@ -141,29 +176,29 @@
 
           </ul>
 			</div>
-			  <button class="button active">1</button>
-        <button class="button">2</button>
-        <button class="button">3</button>
-        <button class="button">4</button>
-        <button class="button">5</button>
-        <button class="button">></button>
+			  <button class="button active" type="button" aria-label="переключение карточек товара">1</button>
+        <button class="button" type="button" aria-label="переключение карточек товара">2</button>
+        <button class="button" type="button" aria-label="переключение карточек товара">3</button>
+        <button class="button" type="button" aria-label="переключение карточек товара">4</button>
+        <button class="button" type="button" aria-label="переключение карточек товара">5</button>
+        <button class="button" type="button" aria-label="переключение карточек товара">></button>
       </main>
 
 	<footer class="main-footer">
           <div class="footer-social">
               <ul>
-                  <li><a class="social-button" href="#">Твиттер</a></li>
-                  <li><a class="social-button" href="#">инстаграмм</a></li>
-                  <li><a class="social-button" href="#">фейсбук</a></li>
-                <li><a class="social-button" href="#">в контакте</a></li>
+                  <li><a class="social-button" href="#" aria-label="твиттер">Твиттер</a></li>
+                  <li><a class="social-button" href="#" aria-label="инстаграмм">инстаграмм</a></li>
+                  <li><a class="social-button" href="#" aria-label="фейсбук">фейсбук</a></li>
+                  <li><a class="social-button" href="#" aria-label="в контакте">в контакте</a></li>
               </ul>
           </div>
-          <div class="documentation">
-              <a href="index.html"></a>
-              <a href="index.html"></a>
-              <a href="index.html"></a>
-              <a href="index.html"></a>
-          </div>
+          <ul class="documentation">
+             <li><a href="index.html">Для поставщиков</a></li>
+						<li><a href="index.html">О производстве</a></li>
+						<li><a href="index.html">Наши документы</a></li>
+						<li><a href="index.html">Экологические стандарты</a></li>
+          </ul>
 
      <div class="footer-logo"><a href="https://echo.htmlacademy.ru">
 				 <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="логотип HTML Academy">
