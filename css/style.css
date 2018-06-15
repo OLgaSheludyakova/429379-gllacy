@@ -9,7 +9,7 @@ body {
   font-weight:bold;
   color: #ffffff;
 
-	
+
   background-color: #849d8f;
   background-position: top center;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@ a {
 .main-navigation {
   line-height: 18px;
   background-color: #849d8f;
-	
+
 }
 
 .site-navigation,
@@ -44,18 +44,21 @@ a {
 	color: #fff;
 	background-color:#d07058;
 }
+.submenu {
+  display: none;
+}
 
 .submenu a {
 	font-size: 14px;
 	line-height: 16px;
-	font-weight: 100;
+	font-weight: normal;
 	color: #323232;
 	background-color: #fff;
 }
 .submenu a.new {
 		font-weight: bold;
 	}
-	
+
 .submenu a:hover {
 	background-color: #fbded7;
 }
@@ -68,7 +71,8 @@ a {
 	background-color: #d07058;
 	}
 
-.main-navigation .button {
+.main-navigation .button,
+.navigation-buttons .button {
    font-size: 14px;
   line-height: 16px;
   font-weight: normal;
@@ -77,18 +81,23 @@ a {
   vertical-align: middle;
   background-color: #9db1a5;
   border: none;
+  border-radius:30px;
+}
+.navigation-buttons .button:hover {
+  background-color: #ffffff;
+  color: #323232;
 }
 
 .time-work {
 	 font-size: 14px;
      line-height: 16px;
-	
+
 }
 
 .phone {
 	 font-size: 22px;
    line-height: 24px;
-	
+
 }
 
 .modal a {
@@ -103,49 +112,51 @@ a {
 .modal .button,
 .catalog-active {
 	 font-size: 18px;
-     line-height: 24px;
+   line-height: 24px;
 	 color: #fff;
-	 font-weight: 700;
+	 font-weight: bold;
 	 background-color: #f16742;
 	 border: none;
+   border-radius:30px;
 }
 
 .caption .button {
 	 font-size: 32px;
    line-height: 44px;
+   border-radius:30px;
 }
 
 .container .button:hover,
 .modal .button:hover,
 .caption .button:hover {
 	background-color:#f48468;
-	
+
 }
 
 .container .button:active,
 .modal .button:active,
 .caption .button:active {
 	 background-color:#db5238;
-	
+
 }
 
 .ice-cream-slides h2 {
 	 font-size: 60px;
      line-height: 60px;
-	 
-	
+
+
 }
 
 .present-list h3 {
 	 font-size: 35px;
      line-height: 41px;
-	 
+
 }
 
 .present-list p {
 	 font-size: 18px;
-   
-    
+
+
 }
 
 .catalog-list p {
@@ -169,11 +180,11 @@ a {
 .price-item {
 	 font-size: 60px;
      line-height: 60px;
-	
+
 }
 .kg {
   font-size: 45px;
-    
+
 }
 .catalog-list,
 .present-list {
@@ -183,13 +194,13 @@ a {
 .icon {
   color: #000;
   font-weight:normal;
- 
-  
+
+
 }
 .blog {
 	background-color: #fff;
     background-image: url(../img/strawberry.jpg);
-    color:#323232; 
+    color:#323232;
     font-weight:normal;
 }
 .blog a {
@@ -197,7 +208,7 @@ a {
 }
 
 .message {
-  color: #323232; 
+  color: #323232;
   background-color: #ffffff;
   font-weight:normal;
 }
@@ -216,7 +227,7 @@ a {
 .documentation,
 .footer-social {
   list-style: none;
- 
+
 }
 
 .documentation a,
@@ -224,22 +235,47 @@ a {
   color: #ffffff;
   font-weight:normal;
   text-decoration: underline;
- 
+
 }
 .breadcrumbs {
     list-style:none;
     font-weight:normal;
 
 }
+.button-apply {
+  border: 2px solid #fff;
+  background-color: #9cb0a4;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 30px;
+}
+.button-apply:hover {
+  background-color: #ffffff;
+  color:  #323232;
+}
+.button-apply:active {
+  background-color: #eaeaea;
+}
 .buttons {
   background-color:transparent;
   color: #ffffff;
   border:none;
-}
-.button.active {
-  background-color: #ffffff;
-  color: #849d8f;
   border-radius: 50%;
+}
+
+.slides {
+   border-radius: 50%;
+}
+.slides:hover,
+.buttons:hover {
+  background-color:#b2c1b7;
+}
+.slides:active,
+.buttons:active {
+  background-color: #ffffff;
+  color: #000;
+
 }
 .slides {
   background-color:transparent;
@@ -257,6 +293,16 @@ a {
 .container a:hover,
 .main-footer a:hover,
 .modal a:hover {
-  color:#f48468; 
-  
+  color:#f48468;
+
 }
+.top-ice,
+.bold-top-ice {
+  background-color: #9db1a5;
+  color: #ffffff;
+  border-radius:30px;
+}
+.top-ice:hover {
+  color:  #323232;
+}
+

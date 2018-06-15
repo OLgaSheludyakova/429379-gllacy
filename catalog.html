@@ -10,14 +10,16 @@
             href="css/style.css">
     </HEAD>
 <BODY>
-     <header class="main-header">
+      <header class="main-header">
+        <div class="header-container">
 
-              <a class="main-heade-logo" href="index.html">
-                  <img src="img/logo.png" width="154" height="64" alt="логотип Глейси">
+
+              <a class="main-header-logo" href="#">
+                  <img src="img/logo.png" width="154" height="64"  alt="логотип магазина Глейси">
               </a>
-              <nav class="main-navigation">
-                      <ul class="site-navigation">
-                          <li><a href="catalog.html"  class="catalog-active">Каталог</a>
+               <nav class="main-navigation">
+                       <ul class="site-navigation">
+                          <li><a href="catalog.html" class="catalog-active">Каталог</a>
                             <ul class="submenu">
                               <li><a href="#"  class="new">Новинки</a></li>
                                <li><a href="#">Сливочное</a></li>
@@ -29,17 +31,21 @@
                           <li><a href="price.html">Доставка и оплата</a></li>
                           <li><a href="about.html">О Компании</a></li>
                        </ul>
-                       <button class="button" type="button" aria-label="поиск"></button>
-                                <section class="modal modal-seach">
+                 </nav>
+           </div>
+          <div class="navigation-buttons">
+
+                          <button class="button" type="button" aria-label="поиск"></button>
+                              <div class="modal modal-seach">
                                     <h4 class="visually-hidden">модальное окно поиск</h4>
                                   <form action="https://echo.htmlacademy.ru" method="post">
                                       <label for="seach-field" class="visually-hidden">поиск</label>
                                        <input type="text" name="seach" id="seach-field" placeholder="что ищем?">
                                   </form>
-                                </section>
+                                </div>
 
                           <button class="button" type="button" aria-label="вход">Вход</button>
-                                <section class="modal modal-login">
+                              <div class="modal modal-login">
                                   <h4 class="visually-hidden">модальное окно вход</h4>
                                      <form action="https://echo.htmlacademy.ru" method="post">
 
@@ -54,11 +60,10 @@
                                             <a href="https://echo.htmlacademy.ru">Забыли пароль</a>
                                             <a href="https://echo.htmlacademy.ru">Новая регистрация</a>
                                       </form>
-                                 </section>
-
+                                 </div>
                           <button class="button" type="button" aria-label="корзина">пусто</button>
 
-                             <section class="modal modal-basket">
+                             <div class="modal modal-basket">
                                    <h4 class="visually-hidden">модальное окно корзина</h4>
                                  <form action="https://echo.htmlacademy.ru" method="post">
                                   <label for="ice-cream" class="visually-hidden">заказ</label>
@@ -67,15 +72,18 @@
                                           итого
                                     <button class="button">оформить заказ</button>
                                  </form>
-                             </section>
+                             </div>
 
-								 </nav>
+
+
+
+        <div class="header-contacts">
                       <p class="time-work">с 10 до 20,ежедневно</p>
-                      <p class="phone">8 812 450 25 25</p>
+								      <a href="tel:+7(812)4502525" aria-label="Номер телефона">8 812 450 25 25</a>
+        </div>
+            </div>
 
-
-
-    </header>
+ </header>
     <main class="container">
       <ul class="breadcrumbs">
 
@@ -87,20 +95,24 @@
 
   <form action="https://echo.htmlacademy.ru" method="post">
         <p>сортировка</p>
-            <select name="top-ice">
-      <option>по популярности</option>
+      <select name="top-ice"  class="top-ice">
+                <option>по популярности</option>
       </select>
 
         <p>Цена 100руб-500руб</p>
+    <div  class="top-ice">
       <input type="range" min="100" max="500">
+    </div>
         <p>Жирность</p>
-        <label> <input type="radio" name="bold-ice-cream" value="0%" >0%</label>
+    <div  class="bold-top-ice">
+        <label> <input type="radio" name="bold-ice-cream" value="0%">0%</label>
         <label> <input type="radio" name="bold-ice-cream" value="<10%" >до10%</label>
         <label> <input type="radio" name="bold-ice-cream" value="<30%" >до30%</label>
         <label> <input type="radio" name="bold-ice-cream" value=">30%" >выше30%</label>
+    </div>
         <p>Наполнители</p>
 
-
+     <div  class="bold-top-ice">
         <input type="checkbox" checked id="chockolate">
          <label for="chockolate">шоколадные</label>
 
@@ -115,8 +127,9 @@
 
         <input type="checkbox" id="jam">
          <label for="jam">джемы</label>
+    </div>
 
-        <button class="button" aria-label="выбор мороженого">Применить</button>
+        <button class="button-apply" aria-label="выбор мороженого">Применить</button>
 
      </form>
 
@@ -191,7 +204,7 @@
           </ul>
 			</div>
       <div class="catalog-buttons">
-			  <button class="button active" type="button" aria-label="переключение карточек товара">1</button>
+			  <button class="buttons" type="button" aria-label="переключение карточек товара">1</button>
         <button class="buttons" type="button" aria-label="переключение карточек товара">2</button>
         <button class="buttons" type="button" aria-label="переключение карточек товара">3</button>
         <button class="buttons" type="button" aria-label="переключение карточек товара">4</button>
@@ -209,19 +222,23 @@
                   <li><a class="social-button" href="#" aria-label="в контакте">в контакте</a></li>
               </ul>
 
-           <ul class="documentation">
--
-+						<li><a href="index.html" aria-label="Для поставщиков">Для поставщиков</a></li>
-+						<li><a href="index.html" aria-label="О производстве">О производстве</a></li>
-+						<li><a href="index.html" aria-label="Наши документы">Наши документы</a></li>
-+						<li><a href="index.html" aria-label="Экологические стандарты">Экологические стандарты</a></li>
-+
-           </ul>
 
--
-+
-+			 <div class="footer-logo">
-+               <a href="https://echo.htmlacademy.ru" aria-label="HTML Academy ссылка">
+
+
+          <ul class="documentation">
+						<li><a href="index.html" aria-label="Для поставщиков">Для поставщиков</a></li>
+						<li><a href="index.html" aria-label="О производстве">О производстве</a></li>
+						<li><a href="index.html" aria-label="Наши документы">Наши документы</a></li>
+						<li><a href="index.html" aria-label="Экологические стандарты">Экологические стандарты</a></li>
+
+          </ul>
+
+
+
+			 <div class="footer-logo">
+               <a href="https://echo.htmlacademy.ru" aria-label="HTML Academy ссылка">
+
+
 				 <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="логотип HTML Academy">
 				 </a>
 
