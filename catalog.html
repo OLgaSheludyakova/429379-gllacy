@@ -18,40 +18,50 @@
               </a>
                <nav class="main-navigation">
                        <ul class="site-navigation">
-                          <li class="catalog-active"><a href="catalog.html" aria-label="Каталог">Каталог</a>
-                            <ul class="submenu">
-                              <li><a href="#" aria-label="Новинки"  class="new">Новинки</a></li>
-                               <li><a href="#" aria-label="Сливочное">Сливочное</a></li>
-                               <li><a href="#" aria-label="Щербеты<">Щербеты</a></li>
-                               <li><a href="#" aria-label="Фруктовый лед">Фруктовый лед</a></li>
-                               <li><a href="#" aria-label="Мелорин">Мелорин</a></li>
-                            </ul>
-                         </li>
+                          <li class="catalog-active"><a href="catalog.html" aria-label="Каталог">Каталог</a></li>
                           <li><a href="price.html" aria-label="Доставка и оплата">Доставка и оплата</a></li>
 												  <li><a href="about.html" aria-label="О компании">О компании</a></li>
-                        
+
                        </ul>
                  </nav>
         </div>
 
           <div class="navigation-buttons">
- 
+
                           <button class="button" type="button" aria-label="поиск"></button>
-                              
+
 
                           <button class="button" type="button" aria-label="вход">Вход</button>
-                             
-                          <button class="button" type="button" aria-label="корзина">пусто</button>
 
+                          <button class="button" type="button" aria-label="корзина">2 товара</button>
+                              <h4 class="visually-hidden">модальное окно корзина</h4>
                              <div class="modal modal-basket">
-                                   <h4 class="visually-hidden">модальное окно корзина</h4>
-                                 <form action="https://echo.htmlacademy.ru" method="post">
+
+                                <!-- <form action="https://echo.htmlacademy.ru" method="post">
                                   <label for="ice-cream" class="visually-hidden">заказ</label>
                                   <input type="text" name="ice-cream" id="ice-cream">
                                         <hr>
-                                          итого
+                                          итого</form>-->
+                               <table class="basket">
+                                 <tr>
+                                   <td> <button class="modal-close" type="button" aria-label="закрыть">X</button></td>
+                                    <td>Пломбир с апельсиновым джемом</td>
+
+                                   <td>1,5*200 руб</td>
+                                   <td>300 руб</td>
+                                 </tr>
+
+                                  <tr>
+                                   <td> <button class="modal-close" type="button" aria-label="закрыть">X</button></td>
+                                   <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                                   <td>1,5 кг*300 руб</td>
+                                   <td>450 руб</td>
+                                 </tr>
+                                 <th colspan="2"></th>
+                                 <th colspan="2">Итого:750 руб.</th>
+                               </table>
                                     <button class="button" aria-label="Оформить заказ">Оформить заказ</button>
-                                 </form>
+
                              </div>
 
             </div>
@@ -147,7 +157,7 @@
                       <img src="img/4.jpg" width="267"  height="267"  alt="ices">
                       <span class="price-item">415₽</span>
                       <span class="kg">/кг</span>
-                      <p>Сливочное крем-брюле с карамельной подливкой</p>	 
+                      <p>Сливочное крем-брюле с карамельной подливкой</p>
 										  <button type="button" class="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </li>
               <li class="item"><img src="img/5.jpg" width="267"  height="267"  alt="ice">
@@ -200,8 +210,8 @@
                    <p>Сливочное с мятным сиропом</p>
 							 <button type="button" class="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
 						</li>
-						     
-              
+
+
 
           </ul>
 			</div>
