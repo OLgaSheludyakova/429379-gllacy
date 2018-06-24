@@ -5,10 +5,11 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 <link href="css/normalize.css" rel="stylesheet">
-      <link rel="stylesheet"
-            href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    
+<div class="wrapper">
 
       <header class="main-header">
            <div class="header-container">
@@ -65,7 +66,7 @@
                                            <input type="text" name="password" id="password-field" placeholder="Пароль">
                                        </p>
 
-                                           <button class="button" type="submit" aria-label="Войти">Войти</button>
+                                           <a class="button" aria-label="Вход">Войти</a>
 
                                             <div class="a">
                                             <a href="https://echo.htmlacademy.ru" aria-label="Забыли пароль?">Забыли пароль?</a>
@@ -96,21 +97,32 @@
               <h2>Крем-брюле и пломбир с малиновым джемом</h2>
 
                 <img src="img/ice-cream.png" width="1045" height="881" alt="мороженки">
+
+
+
               </li>
 
               <li class="slide-2">
                 <h2>Шоколадный пломбир и лимонный сорбет</h2>
-                <img src="img/ice-cream%20slid2.png" width="1065" height="859" alt="мороженки"></li>
+                <img src="img/ice-cream%20slid2.png" width="1065" height="859" alt="мороженки">
+
+              </li>
+
               <li class="slide-3">
                 <h2>Пломбир с помадкой и клубничный щербет</h2>
-                <img src="img/ice-cream%20slid3.png" width="1079" height="854" alt="мороженки"></li>
+                <img src="img/ice-cream%20slid3.png" width="1079" height="854" alt="мороженки">
+
+              </li>
+
             </ul>
       <div class="button-slides">
         <button class="slides" type="button" aria-label="переключение слайдов-слайд1"></button>
         <button class="slides" type="button" aria-label="переключение слайдов-слайд2"></button>
         <button class="slides" type="button" aria-label="переключение слайдов-слайд3"></button>
-       </div>
-        <button class="button" type="button" aria-label="заказ мороженого">Давайте оба!</button>
+
+
+      </div>
+<button class="button" type="button" aria-label="заказ мороженого">Давайте оба!</button>
         </div>
 
 
@@ -144,6 +156,7 @@
                       <span class="price-item">310₽</span>
                       <span class="kg">/кг</span>
                       <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                       <button type="button" class="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </li>
 
                   <li class="item">
@@ -152,6 +165,7 @@
                       <span class="price-item">380₽</span>
                       <span class="kg">/кг</span>
                       <p>Сливочно-кофейное с кусочками шоколада</p>
+                       <button type="button" class="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </li>
 
                   <li class="item">
@@ -160,6 +174,7 @@
                       <span class="price-item">355₽</span>
                       <span class="kg">/кг</span>
                       <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+                       <button type="button" class="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </li>
 
                   <li class="item">
@@ -168,6 +183,7 @@
                       <span class="price-item">415₽</span>
                       <span class="kg">/кг</span>
                       <p>Сливочное крем-брюле с карамельной подливкой</p>
+                       <button type="button" class="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </li>
               </ul>
 
@@ -189,6 +205,7 @@
 
 
           </section>
+
         <div class="blog-message">
 
           <article class="blog">
@@ -201,15 +218,16 @@
 						<h3 class="visually-hidden">Рассылка</h3>
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,что у нас происходит.Обещаем не спамить и не слать всякой ненужной ерунды.Честно=
               </p>
+
             <form action="https://echo.htmlacademy.ru" method="post" class="message-form">
-              <p> <label for="email-field" class="visually-hidden"></label>
+              <div> <label for="email-field" class="visually-hidden"></label>
 
               <input type="email" name="email" id="email-field" placeholder="Электронная почта ">
-              </p>
+              </div>
               <button class="button" type="submit" aria-label="подписка на рассылку">Отправить</button>
             </form>
-
-          </section>
+           </section>
+           <div class="post"></div>
         </div>
 
 				 <section class="map">
@@ -224,7 +242,7 @@
                     <a class="phone" href="tel:+7(812)4502525" aria-label="Номер телефона">8 812 450 25 25</a>
 										 (с 10 до 20 ежедневно)
 								  </p>
-                <button class="button" aria-label="контактная информация">Форма обратной связи</button>
+                <button class="button feedback" aria-label="контактная информация">Форма обратной связи</button>
                 </div>
 
                  <div class="modal modal-feedback">
@@ -250,6 +268,7 @@
                    </div>
 
           </section>
+
        </main>
 
 		 <footer class="main-footer">
@@ -297,5 +316,7 @@
        </div>
 
       </footer>
+    </div>
+
    </body>
 </html>

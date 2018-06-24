@@ -3,12 +3,7 @@ body {
   margin: 0;
   padding: 0;
 
-  max-width:1146px;
-  padding: 0 27px;
-  margin: 0 auto;
-  outline: 2px solid #fff000;
-
-  font-family:'Roboto', sans-serif;
+  font-family:"Roboto","Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight:bold;
@@ -16,6 +11,13 @@ body {
   background-color: #849d8f;
   background-position: top center;
   background-repeat: no-repeat;
+}
+.wrapper {
+  max-width:1146px;
+  padding: 0 27px;
+  margin: auto;
+
+  outline: 2px solid #fff000;
 }
 .main-header {
   width: 100%;
@@ -28,7 +30,7 @@ body {
 .main-header-logo {
   width: 154px;
   height: 64px;
-  margin-right: -20px;
+  margin-right: 20px;
 
 }
 .modal-seach,
@@ -53,6 +55,8 @@ a {
 .submenu,
 .ice-cream-slides {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -152,7 +156,7 @@ a {
   content:"";
   width: 20px;
   height: 20px;
-  background-image: url(../img/%D0%92%D1%85%D0%BE%D0%B4.svg);
+  background-image: url(../img/login.svg);
   background-repeat:  no-repeat;
   background-position:  center;
   position: absolute;
@@ -227,9 +231,28 @@ a {
 	 color: #fff;
 	 font-weight: bold;
 	 background-color: #f16742;
-	 border: none;
+   background-image: linear-gradient(to top,#e74a35,#f26843);
+	 border:none;
+   box-shadow: 0 2px 2px #323232;
    border-radius:30px;
+
 }
+.container .button:hover,
+.modal .button:hover,
+.caption .button:hover {
+	background-color:#f48468;
+  cursor: pointer;
+}
+.container .button:active,
+.modal .button:active,
+.caption .button:active {
+	 background-color:#db5238;
+}
+.modal-login a {
+  text-decoration: none;
+
+}
+
 .catalog-active a {
 	padding: 10px;
 	font-size: 16px;
@@ -243,19 +266,11 @@ a {
    line-height: 44px;
    border-radius:30px;
 }
-.container .button:hover,
-.modal .button:hover,
-.caption .button:hover {
-	background-color:#f48468;
-}
-.container .button:active,
-.modal .button:active,
-.caption .button:active {
-	 background-color:#db5238;
-}
+
 .ice-cream-slides h2 {
 	 font-size: 60px;
    line-height: 60px;
+   width: 670px;
 }
 .present-list h3 {
 	 font-size: 35px;
@@ -282,9 +297,11 @@ a {
 }
 .catalog-list p {
 	font-weight:normal;
+  text-decoration: underline;
 }
 
 .info {
+  height: 246px;
   font-size: 16px;
   line-height: 22px;
 	background-color: #ebdfc6;
@@ -306,12 +323,13 @@ a {
 .info p {
   margin: 0;
   padding: 0;
-  margin-bottom:20px;
+  margin-bottom:10px;
 }
 .info .container {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: space-between;
   position: relative;
 }
 .info .container p {
@@ -323,7 +341,7 @@ a {
   height: 50px;
   position: absolute;
   left: 0;
-  top: 10px;
+  top: 0;
   background-image: url(../img/ice-cream.svg);
   background-repeat:  repeat;
   background-position:  center;
@@ -336,7 +354,7 @@ a {
   height: 50px;
   position: absolute;
   left: 0;
-  top: 100px;
+  top: 70px;
   background-image: url(../img/eco.svg);
   background-repeat:  repeat;
   background-position:  center;
@@ -349,7 +367,7 @@ a {
   height: 50px;
   position: absolute;
   right: 455px;
-  top: 10px;
+  top: 0;
   background-image: url(../img/cow.svg);
   background-repeat:  repeat;
   background-position:  center;
@@ -362,26 +380,34 @@ a {
   height: 50px;
   position: absolute;
   right: 455px;
-  top: 100px;
+  top: 70px;
   background-image: url(../img/thermometer.svg);
   background-repeat:  repeat;
   background-position:  center;
 
 
 }
-.about-shop-right {
-  margin-left: 18px;
+.about-shop-right,
+.about-shop-left {
+  width: 45%;
+
 }
 .info .about-shop,
 .blog a {
-	font-size: 24px;
+	  font-size: 24px;
     line-height: 30px;
     color: #323232;
     font-weight: bold;
 }
+.blog a {
+  width: 285px;
+	text-decoration: underline;
+}
 .price-item {
-	 font-size: 60px;
-     line-height: 60px;
+	 font-size: 45px;
+   line-height: 45px;
+   text-shadow: 0 1px 3px #313235;
+   z-index: 2;
 }
 .kg {
   font-size: 45px;
@@ -396,20 +422,47 @@ a {
   font-weight:normal;
 }
 .blog {
-	  background-color: #fff;
-    background-image: url(../img/strawberry.jpg);
-    color:#323232;
-    font-weight:normal;
-}
-.blog a {
-  width: 285px;
-	text-decoration: underline;
-}
-
-.message {
-  color: #323232;
-  background-color: #ffffff;
+  width:520px;
+  height: 159px;
+  border-radius: 20px;
+  padding: 30px 20px;
+  margin: 0;
+  background-color: #fff;
+  background-image: url(../img/strawberry.jpg);
+  background-repeat:  repeat;
+  background-position:  center;
+  color:#323232;
   font-weight:normal;
+}
+.message {
+  font-size: 16px;
+  line-height: 22px;
+  width:548px;
+  height: 213px;
+  padding: 25px;
+  padding-bottom: 35px;
+  margin-left: 45px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  z-index: 1;
+  position: relative;
+  color: #323232;
+  box-sizing: border-box;
+  font-weight:normal;
+  margin-left: 26px;
+  z-index: 1;
+}
+.message p {
+  margin: 0;
+  margin-bottom: 25px;
+}
+.blog-message {
+  margin-bottom: 40px;
+  display: flex;
+}
+.navigation-buttons .button {
+  background-color: ##9db1a5;
 }
 
 .contacts {
@@ -483,9 +536,11 @@ a {
   height: 50px;
 }
 
+
 .container a:hover,
 .main-footer a:hover,
-.modal a:hover {
+.modal a:hover,
+.header-contacts a:hover {
   color:#f48468;
 }
 .visually-hidden     {
@@ -550,7 +605,7 @@ a {
 }
 .modal-login .button {
   width: 100px;
-  height: 47px;
+  height: 40px;
   position: absolute;
   left: 30px;
 
@@ -593,9 +648,7 @@ a {
   right: 25px;
   bottom: 25px;
 }
-.modal-feedback .button:active .modal-feedback {
-  display: block;
-}
+
 .modal-feedback b {
   color:  #323232;
 	font-size: 24px;
@@ -695,8 +748,13 @@ a {
   bottom: 23px;
 }
 .catalog-list .item {
+  margin: 0;
+  padding: 0;
   position: relative;
+  margin-right: 26px;
+  height:  321px;
 }
+
 .icon {
   background-image: url(../img/hit.svg);
   background-repeat:  no-repeat;
@@ -711,11 +769,12 @@ a {
 .catalog-list .price-item,
 .catalog-list .kg {
   position: absolute;
-  top: 217px;
+  top: 211px;
+  margin: 0;
 }
 .catalog-list .kg {
-  left: 150px;
-  top: 240px;
+  left: 111px;
+  top: 220px;
 }
 /* ----- Сеточные стили ----- */
 
@@ -731,9 +790,12 @@ a {
 }
 .site-navigation {
   display: flex;
+
 }
-.site-navigation li {
+.site-navigation>li {
   margin-right: 30px;
+  margin-top: 20px;
+
 }
 .header-contacts {
   position: absolute;
@@ -741,6 +803,7 @@ a {
   top: 70px;
   width: 165px;
   text-align: right;
+  z-index: 10;
 }
 .ice-cream-slides {
   display: flex;
@@ -752,9 +815,12 @@ a {
  height: 630px;
  margin: 0;
 }
-.ice-cream-slides h2 {
-  width: 670px;
+.slide-2,
+.slide-3 {
+  display: none;
 }
+
+
 .caption .button {
   width: 275px;
   height: 68px;
@@ -775,24 +841,8 @@ a {
   width: 165px;
   height: 45px;
 }
-.catalog-list .item {
-  margin-right: 26px;
 
-}
 
-.blog,
-.message {
-  width: 45%;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 0;
-}
-.blog-message {
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: space-between;
-
-}
 textarea {
   height: 150px;
   width: 425px;
@@ -804,7 +854,7 @@ input {
 }
 
 .message-form {
-   display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -873,21 +923,32 @@ input {
 .catalog-list .item p,
 .catalog-list-all .item p {
 	text-align: center;
+  margin: 0;
+  margin-top: 7px;
+
 }
-.catalog-list-all .item .button {
+.catalog-list-all .item .button,
+.catalog-list .item .button {
 	width: 200px;
 	height: 45px;
 	display: none;
+  margin: 20px auto;
+
+
 }
 
-.catalog-list-all .item:hover {
+.catalog-list-all .item:hover,
+.catalog-list .item:hover {
 	background-color: #9cb0a4;
 	border-radius: 5px;
-	box-shadow: 0 0 0 10px
-		#9cb0a4;
+	box-shadow: 0 0 0 10px #9cb0a4;
+  margin-bottom: -140px;
+  height: 409px;
 }
-.catalog-list-all .item:hover > .button {
+.catalog-list-all .item:hover > .button,
+.catalog-list .item:hover > .button {
 	display: block;
+
 	}
 .catalog-list-all .item:nth-child(4n) {
   margin-right: 0;
@@ -903,7 +964,7 @@ input {
   justify-content: center;
 }
 .social-button:hover {
-  border: 5px solid #106d6e;
+background-color: #91cfe9;
 
 }
 .footer-social {
@@ -927,9 +988,23 @@ input {
   left: 15px;
   top: 4px;
 }
-.main-footer a:hover {
-   background-color: #106d6e;
-  color: #ffffff;
-  border-radius: 10px;
-  padding: 5px;
+.footer-logo a:hover {
+  background-color:  #91cfe9;
+
+}
+.post {
+
+ width: 560px;
+ height: 220px;
+ border-radius: 20px;
+ background-image: repeating-linear-gradient(-45deg,
+   #ffffff 0px, #ffffff 10px,
+   #92cdff 10px, #92cdff 20px,
+   #ffffff 20px,#ffffff 30px,
+   #fe9e90 30px,#fe9e90 40px);
+  position: absolute;
+  top: 1666px;
+  right: 108px;
+
+
 }
