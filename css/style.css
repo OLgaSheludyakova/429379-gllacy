@@ -14,8 +14,9 @@ body {
 }
 .wrapper {
   max-width:1146px;
+  min-width: 900px;
+  margin:0 auto;
   padding: 0 27px;
-  margin: auto;
 
   outline: 2px solid #fff000;
 }
@@ -27,12 +28,16 @@ body {
   align-items: center;
   position: relative;
 }
+.container {
+  width: 100%;
+}
 .main-header-logo {
   width: 154px;
   height: 64px;
   margin-right: 20px;
-
 }
+                                             .modal-basket{display: none;}
+
 .modal-seach,
 .modal-login {
   display: none;
@@ -249,7 +254,7 @@ a {
 	 background-color:#db5238;
 }
 .modal-login a {
-  text-decoration: none;
+  text-decoration: underline;
 
 }
 
@@ -272,6 +277,9 @@ a {
    line-height: 60px;
    width: 670px;
 }
+.present-list {
+    width: 100%;
+}
 .present-list h3 {
 	 font-size: 35px;
      line-height: 41px;
@@ -282,7 +290,7 @@ a {
 .present-item {
   border-radius: 16px;
   height: 230px;
-  width: 560px;
+  width:49%;
 }
 .present-item:first-child {
   background-image: url(../img/raspberries.jpg);
@@ -294,6 +302,9 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 
+}
+.catalog-list {
+    width: 100%;
 }
 .catalog-list p {
 	font-weight:normal;
@@ -321,6 +332,8 @@ a {
 
 }
 .info p {
+  font-size: inherit;
+  line-height: inherit;
   margin: 0;
   padding: 0;
   margin-bottom:10px;
@@ -422,7 +435,7 @@ a {
   font-weight:normal;
 }
 .blog {
-  width:520px;
+  width:49%;
   height: 159px;
   border-radius: 20px;
   padding: 30px 20px;
@@ -437,11 +450,11 @@ a {
 .message {
   font-size: 16px;
   line-height: 22px;
-  width:548px;
+  width:49%;
   height: 213px;
-  padding: 25px;
+  padding: 25px 20px;
   padding-bottom: 35px;
-  margin-left: 45px;
+
   background-color: #ffffff;
   border-radius: 20px;
   border: 6px solid transparent;
@@ -458,6 +471,7 @@ a {
   margin-bottom: 25px;
 }
 .blog-message {
+    width: 100%;
   margin-bottom: 40px;
   display: flex;
 }
@@ -496,6 +510,8 @@ a {
     font-weight:normal;
 }
 .button-apply {
+  width: 145px;
+  height: 40px;
   border: 2px solid #fff;
   background-color: #9cb0a4;
   color: #ffffff;
@@ -515,6 +531,39 @@ a {
   color: #ffffff;
   border:none;
   border-radius: 50%;
+}
+/*.visually {
+  width: 25px;
+  height: 25px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: fff;
+}
+ .hidden {
+  width: 25px;
+  height: 25px;
+  border: 2px solid #fff;
+  color: #fff;
+}*/
+
+label input[type="radio"] {
+  margin-right: 10px;
+  margin-left: 20px;
+  position: relative;
+
+}
+
+ label input[type="radio"]::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -5px;
+
 }
 .slides {
    border-radius: 50%;
@@ -555,7 +604,10 @@ a {
 
 }
 .top-ice,
-.bold-top-ice {
+.bold-top-ice,
+.top-price-ice,
+.variety {
+  padding: 5px;
   background-color: #9db1a5;
   color: #ffffff;
   border-radius:30px;
@@ -625,11 +677,15 @@ a {
   display:none;
   width: 430px;
   height: 390px;
-  position: relative;
+  position: fixed;
   position: absolute;
-  left:336px;
-  top: -1600px;
+  left:50%;
+  top: -5px;
+  margin-left: -225px;
 }
+.feedback:active + .modal-feedback {
+  display: block;
+  }
 .modal-feedback input,
 .modal-feedback textarea {
    border: 1px solid  #9db1a5;
@@ -753,6 +809,7 @@ a {
   position: relative;
   margin-right: 26px;
   height:  321px;
+  width: 23%;
 }
 
 .icon {
@@ -829,6 +886,10 @@ a {
   border-radius: 20px;
 
 }
+.present,
+.catalog {
+  width: 100%
+}
 
 .present-list,
 .catalog-list {
@@ -865,8 +926,10 @@ input {
 .message input {
   padding: 10px;
   width: 350px;
+  box-sizing: border-box;
 }
 .map {
+  width: 100%;
   position: relative;
   margin: 0;
   margin-left: -27px;
@@ -900,8 +963,22 @@ input {
   justify-content: space-between;
   align-items: center;
 }
+.filter {
+margin-right: 40px;
+
+}
+.field {
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.filter .two {
+  width: 100px;
+  margin-left: -150px;
+}
 .catalog-list-all {
-  width: 1146px;
+  width: 100%;
   display: flex;
 
   flex-wrap: wrap;
@@ -1004,7 +1081,10 @@ background-color: #91cfe9;
    #fe9e90 30px,#fe9e90 40px);
   position: absolute;
   top: 1666px;
-  right: 108px;
-
-
+  right: 103px;
+}
+.filter .two,
+.filter select {
+  background-color: #9db1a5;
+  border-radius: 20px;
 }

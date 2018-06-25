@@ -6,8 +6,7 @@
        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
        <link href="css/normalize.css" rel="stylesheet">
 
-      <link rel="stylesheet"
-            href="css/style.css">
+      <link rel="stylesheet"  href="css/style.css">
     </HEAD>
 <BODY>
   <div class="wrapper">
@@ -98,7 +97,7 @@
 
                              </div>
 
-            </div>
+
          <div class="header-contacts">
                       <p class="time-work">с 10 до 20,ежедневно</p>
 								      <a href="tel:+7(812)4502525" aria-label="Номер телефона">8 812 450 25 25</a>
@@ -115,49 +114,60 @@
       </ul>
 			<h2>Сливочное мороженое</h2>
 
-  <form action="https://echo.htmlacademy.ru" method="post">
-        <p>сортировка</p>
+  <form action="https://echo.htmlacademy.ru" method="post" class="field">
+
+  <div class="filter">
+    <label>Сортировка</label><br>
       <select name="top-ice"  class="top-ice">
         <option>по популярности</option>
 				<option>сначала недорогие</option>
 				<option>сначала дорогие</option>
 				<option>по жирности</option>
       </select>
-
-        <p>Цена 100руб-500руб</p>
-    <div  class="top-ice">
-      <input type="range" min="100" max="500">
     </div>
-        <p>Жирность</p>
-    <div  class="bold-top-ice">
-        <label> <input type="radio" name="bold-ice-cream" value="0%">0%</label>
-        <label> <input type="radio" name="bold-ice-cream" value="<10%" >до10%</label>
-        <label> <input type="radio" name="bold-ice-cream" value="<30%" >до30%</label>
-        <label> <input type="radio" name="bold-ice-cream" value=">30%" >выше30%</label>
-    </div>
-        <p>Наполнители</p>
 
-     <div  class="bold-top-ice">
-        <input type="checkbox" checked id="chockolate">
+    <div class="filter">
+      <label >Цена 100руб-500руб</label>
+     <div  class="top-ice-price">
+      <input type="range">
+      <input type="range" class="two">
+     </div>
+   </div>
+
+   <div  class="filter">
+      <label>Жирность</label>
+      <div class=" bold-top-ice">
+        <label> <input type="radio" class="visually-hidden" name="bold-ice-cream" value="0%">0%</label>
+        <label> <input type="radio" class="visually-hidden"   name="bold-ice-cream" value="<10%" >до10%</label>
+        <label> <input type="radio" class="visually" name="bold-ice-cream" value="<30%" >до30%</label>
+        <label> <input type="radio" class="visually" name="bold-ice-cream" value=">30%" >выше30%</label>
+      </div>
+      </div>
+
+<div  class="filter">
+<label>Наполнители</label>
+     <div  class="variety">
+
+        <input type="checkbox" class="hidden" checked id="chockolate">
          <label for="chockolate">шоколадные</label>
 
-        <input type="checkbox" checked id="sugar">
+        <input type="checkbox" class="hidden" checked id="sugar">
          <label for="sugar">сахарные присыпки</label>
 
-        <input type="checkbox" id="fruits">
+        <input type="checkbox" class="hidden" id="fruits">
          <label for="fruits">фрукты</label>
 
-        <input type="checkbox" id="syrups">
+        <input type="checkbox" class="hidden" id="syrups">
          <label for="syrups">сиропы</label>
 
-        <input type="checkbox" id="jam">
+        <input type="checkbox" class="hidden" id="jam">
          <label for="jam">джемы</label>
     </div>
-
+</div>
         <button class="button-apply" aria-label="выбор мороженого">Применить</button>
 
      </form>
-
+</section>
 			<div class="catalog-content">
           <ul class="catalog-list-all" >
                <li class="item">
