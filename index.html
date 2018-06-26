@@ -19,7 +19,7 @@
               </a>
                <nav class="main-navigation">
                        <ul class="site-navigation">
-                          <li class="catalog"><a href="catalog.html" aria-label="Каталог">Каталог</a>
+                          <li class="header-catalog"><a href="catalog.html" aria-label="Каталог">Каталог</a>
 
                             <ul class="submenu">
                               <li class="new"><a href="#" aria-label="Новинки" >Новинки</a></li>
@@ -48,6 +48,7 @@
                                       <label for="seach-field" class="visually-hidden">поиск</label>
                                        <input type="text" name="seach" id="seach-field" placeholder="Что ищем?">
                                   </form>
+                                  <button class="modal-close">закрыть</button>
                                 </div>
 
                           <button class="button login" type="button" aria-label="вход"> Вход </button>
@@ -151,14 +152,14 @@
 						<h2 class="visually-hidden">Самое популярное</h2>
               <ul class="catalog-list">
 
-                  <li class="item">
-                      <div class="icon"></div>
-                      <img src="img/1.jpg" width="267"  height="267"   alt="ice">
-                      <span class="price-item">310₽</span>
-                      <span class="kg">/кг</span>
-                      <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-                       <button type="button" class="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
-                  </li>
+                <li class="item">
+                    <div class="icon"></div>
+                    <img src="img/1.jpg" width="267"  height="267"   alt="ice">
+                    <span class="price-item">310₽</span>
+                    <span class="kg">/кг</span>
+                    <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                     <button type="button" class="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+                </li>
 
                   <li class="item">
                       <div class="icon"></div>
@@ -214,8 +215,9 @@
               <span>Новое в нашем блоге</span>
               <a class="recipes" href="">10 способов сервировки фруктовых щербетов к столу</a>
           </article>
-
+<div class="post">
           <section class="message">
+
 						<h3 class="visually-hidden">Рассылка</h3>
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,что у нас происходит.Обещаем не спамить и не слать всякой ненужной ерунды.Честно=
               </p>
@@ -227,13 +229,16 @@
               </div>
               <button class="button" type="submit" aria-label="подписка на рассылку">Отправить</button>
             </form>
+
            </section>
-           <div class="post"></div>
+</div>
         </div>
 
 				 <section class="map">
+           <div>
 						<h3 class="visually-hidden"> Карта</h3>
-              <img src="img/carta.jpg" width="1200px"  height="430"   alt="карта">
+              <img src="img/carta.jpg" width="1200"  height="430"   alt="карта">
+           </div>
               <div class="contacts">
                   <p>Адрес главного офиса<br>
                     и офлайн-магазина:<br>
@@ -242,10 +247,10 @@
                 <p>  Дата заказов по телефону:<br>
                     <a class="phone" href="tel:+7(812)4502525" aria-label="Номер телефона">8 812 450 25 25</a>
 										 (с 10 до 20 ежедневно)
-								  </p>
-                  <button class="button feedback" aria-label="контактная информация">Форма обратной связи</button>
-              </div>
+								</p>
 
+              </div>
+<button class="button feedback" aria-label="контактная информация">Форма обратной связи</button>
 
                  <div class="modal modal-feedback">
              <h4 class="visually-hidden">модальное окно обратная связь</h4>
@@ -309,16 +314,35 @@
        </div>
 
 		 <div class="footer-logo">
-        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy ссылка">
-				 <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="логотип HTML Academy">
+         <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo" aria-label="HTML Academy ссылка">
+               <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="логотип HTML Academy">
 				 </a>
            <div class="footer-logo">
          <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy ссылка"> Сделано в HTML Academy 2017</a>
            </div>
        </div>
-
-      </footer>
+   </footer>
 
 </div>
+<script>
+var seach = document.querySelector(".seach");
+var popup = document.querySelector(".modal-seach");
+var close = popup.querySelector(".modal-close");
+var form = popup.querySelector("form");
+var login = popup.querySelector("[name=seach]");
+
+seach.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.add("modal-show");
+  seach.focus();
+});
+close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+  });
+  form.addEventListener("submit", function (evt) {
+    evt.preventDefault();
+  });
+</script>
    </body>
 </html>
