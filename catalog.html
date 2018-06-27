@@ -18,7 +18,7 @@
               </a>
                <nav class="main-navigation">
                        <ul class="site-navigation">
-                          <li class="catalog-active"><a href="catalog.html" aria-label="Каталог">Каталог</a>
+                          <li class="catalog-active"><a href="#" aria-label="Каталог">Каталог</a>
                           </li>
                           <li><a href="price.html" aria-label="Доставка и оплата">Доставка и оплата</a></li>
                           <li><a href="about.html" aria-label="О компании">О компании</a></li>
@@ -29,19 +29,17 @@
 
           <div class="navigation-buttons">
 
-                          <button class="button seach" type="button" aria-label="поиск"></button>
-
-
-
-                            <div class="modal modal-seach">
+              <button class="button seach" type="button" aria-label="поиск"></button>
+                               <div class="modal modal-seach">
                                    <h4 class="visually-hidden">модальное окно поиск</h4>
                                   <form action="https://echo.htmlacademy.ru" method="post" class="seach-form">
                                       <label for="seach-field" class="visually-hidden">поиск</label>
                                        <input type="text" name="seach" id="seach-field" placeholder="Что ищем?">
                                   </form>
+                                  <button class="modal-close-seach"aria-label="кнопка закрытия поля поиска"></button>
                                 </div>
 
-                          <button class="button login" type="button" aria-label="вход"> Вход </button>
+              <button class="button login" type="button" aria-label="вход"> Вход </button>
 
 
                               <div class="modal modal-login">
@@ -57,7 +55,7 @@
                                            <input type="text" name="password" id="password-field" placeholder="Пароль">
                                        </p>
 
-                                           <button class="button" type="submit" aria-label="Войти">Войти</button>
+                                           <button class="button" aria-label="Вход">Войти</button>
 
                                             <div class="a">
                                             <a href="https://echo.htmlacademy.ru" aria-label="Забыли пароль?">Забыли пароль?</a>
@@ -65,12 +63,13 @@
                                             </div>
 
                                       </form>
+                                        <button class="modal-close-login"aria-label="кнопка закрытия поля входа"></button>
                                  </div>
-						 <a href="catalog.html" class="button basket"  aria-label="корзина">Пусто</a>
+
+            <a href="catalog.html" class="button basket-catalog"  aria-label="корзина">2товара</a>
 
 
 
-                         </div>
 
                              <div class="modal modal-basket">
                                <h4 class="visually-hidden">модальное окно корзина</h4>
@@ -96,6 +95,8 @@
                                     <button class="button" aria-label="Оформить заказ">Оформить заказ</button>
 
                              </div>
+            </div>
+
 
 
          <div class="header-contacts">
@@ -128,18 +129,25 @@
     <div class="filter">
       <label >Цена 100руб-500руб</label>
      <div  class="top-ice-price">
-      <input type="range">
-      <input type="range" class="two">
+      <input type="range" class="range">
+      <input type="range" class="range">
      </div>
    </div>
 
    <div  class="filter">
       <label>Жирность</label>
       <div class=" bold-top-ice">
-        <label> <input type="radio" class="visually-hidden" name="bold-ice-cream" value="0%">0%</label>
-        <label> <input type="radio" class="visually-hidden"   name="bold-ice-cream" value="<10%" >до10%</label>
-        <label> <input type="radio" class="visually" name="bold-ice-cream" value="<30%" >до30%</label>
-        <label> <input type="radio" class="visually" name="bold-ice-cream" value=">30%" >выше30%</label>
+         <input type="radio" id="0" name="bold-ice-cream" value="0%">
+         <label for="0">0%</label>
+
+         <input type="radio" id="10" name="bold-ice-cream" value="10%" >
+         <label for="10">10%</label>
+
+         <input type="radio" id="30"  name="bold-ice-cream" value="30%" >
+         <label for="30">до30%</label>
+
+        <input type="radio" id=">30" name="bold-ice-cream" value=">30%" >
+        <label for=">30">выше30%</label>
       </div>
       </div>
 
@@ -260,7 +268,7 @@
           </ul>
 			</div>
       <div class="catalog-buttons">
-			  <button class="buttons" type="button" aria-label="переключение карточек товара">1</button>
+			  <button class="buttons active" type="button" aria-label="переключение карточек товара">1</button>
         <button class="buttons" type="button" aria-label="переключение карточек товара">2</button>
         <button class="buttons" type="button" aria-label="переключение карточек товара">3</button>
         <button class="buttons" type="button" aria-label="переключение карточек товара">4</button>
@@ -306,14 +314,15 @@
 
 		 <div class="footer-logo">
         <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy ссылка">
-				 <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="логотип HTML Academy">
+				 <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип HTML Academy">
 				 </a>
            <div class="footer-logo">
-         <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy ссылка"> Сделано в HTML Academy 2017</a>
+         <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy ссылка">Сделано в HTML Academy 2017</a>
            </div>
        </div>
 
       </footer>
-    </div>
+
+  </div>
    </BODY>
 </HTML>

@@ -38,20 +38,17 @@
 
           <div class="navigation-buttons">
 
-                          <button class="button seach" type="button" aria-label="поиск"></button>
-
-
-
-                            <div class="modal modal-seach">
+              <button class="button seach" type="button" aria-label="поиск"></button>
+                               <div class="modal modal-seach">
                                    <h4 class="visually-hidden">модальное окно поиск</h4>
                                   <form action="https://echo.htmlacademy.ru" method="post" class="seach-form">
                                       <label for="seach-field" class="visually-hidden">поиск</label>
                                        <input type="text" name="seach" id="seach-field" placeholder="Что ищем?">
                                   </form>
-                                  <button class="modal-close">закрыть</button>
+                                  <button class="modal-close-seach"aria-label="кнопка закрытия поля поиска"></button>
                                 </div>
 
-                          <button class="button login" type="button" aria-label="вход"> Вход </button>
+              <button class="button login" type="button" aria-label="вход"> Вход </button>
 
 
                               <div class="modal modal-login">
@@ -75,9 +72,10 @@
                                             </div>
 
                                       </form>
+                                        <button class="modal-close-login"aria-label="кнопка закрытия поля входа"></button>
                                  </div>
 
-            <a href="catalog.html" class="button basket"  aria-label="корзина">Пусто</a>
+            <a href="catalog.html" class="button basket-main"  aria-label="корзина">Пусто</a>
 
                          </div>
 
@@ -234,47 +232,49 @@
 </div>
         </div>
 
-				 <section class="map">
-           <div>
-						<h3 class="visually-hidden"> Карта</h3>
-              <img src="img/carta.jpg" width="1200"  height="430"   alt="карта">
-           </div>
-              <div class="contacts">
-                  <p>Адрес главного офиса<br>
-                    и офлайн-магазина:<br>
-                <span class="contact">ул.Большая Конюшенная<br> 19/8,Санкт-Петербург</span></p>
+        <section class="map">
+          <div>
+  						<h3 class="visually-hidden"> Карта</h3>
+                <img src="img/carta.jpg" width="1200"  height="430"   alt="карта">
+          </div>
+                <div class="contacts">
+                    <p>Адрес главного офиса<br>
+                      и офлайн-магазина:<br>
+                  <span class="contact">ул.Большая Конюшенная<br> 19/8,Санкт-Петербург</span></p>
 
-                <p>  Дата заказов по телефону:<br>
-                    <a class="phone" href="tel:+7(812)4502525" aria-label="Номер телефона">8 812 450 25 25</a>
-										 (с 10 до 20 ежедневно)
-								</p>
+                  <p>  Дата заказов по телефону:<br>
+                      <a class="phone" href="tel:+7(812)4502525" aria-label="Номер телефона">8 812 450 25 25</a>
+  										 (с 10 до 20 ежедневно)
+  								  </p>
+                </div>
+                    <div>
+                  <button class="button feedback" aria-label="контактная информация">Форма обратной связи</button>
 
-              </div>
-<button class="button feedback" aria-label="контактная информация">Форма обратной связи</button>
 
-                 <div class="modal modal-feedback">
-             <h4 class="visually-hidden">модальное окно обратная связь</h4>
-								      <b>Мы обязательно вам ответим!</b>
-                      <form action="https://echo.htmlacademy.ru" method="post">
-                          <p> <label for="feedback-field" class="visually-hidden"></label>
+                   <div class="modal modal-feedback">
+               <h4 class="visually-hidden">модальное окно обратная связь</h4>
+  								      <b>Мы обязательно вам ответим!</b>
+                        <form action="https://echo.htmlacademy.ru" method="post">
+                            <p> <label for="feedback-field" class="visually-hidden"></label>
 
-				                  <input type="text" name="feedback" id="feedback-field" placeholder="Как вас зовут?"></p>
+  				                  <input type="text" name="feedback" id="feedback-field" placeholder="Как вас зовут?"></p>
 
-                           <p> <label for="email-answer" class="visually-hidden"></label>
+                             <p> <label for="email-answer" class="visually-hidden"></label>
 
-                           <input type="email" name="email" id="email-answer" placeholder="Ваша почта для ответа">
-                           </p>
+                             <input type="email" name="email" id="email-answer" placeholder="Ваша почта для ответа">
+                             </p>
 
-                          <p>
-                            <textarea rows="8" placeholder="Напишите что-нибудь"></textarea>
-                          </p>
+                            <p>
+                              <textarea rows="8" placeholder="Напишите что-нибудь"></textarea>
+                            </p>
 
-                            <button class="button" type="submit" aria-label="Отправить" >Отправить</button>
-                        </form>
-                             <button class="modal-close" type="button" aria-label="закрыть">X</button>
+                              <button class="button" type="submit" aria-label="Отправить" >Отправить</button>
+                          </form>
+                               <button class="modal-close" type="button" aria-label="закрыть">X</button>
+                     </div>
                    </div>
-
-          </section>
+  
+            </section>
 
        </main>
 
@@ -315,34 +315,51 @@
 
 		 <div class="footer-logo">
          <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo" aria-label="HTML Academy ссылка">
-               <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="логотип HTML Academy">
+               <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип HTML Academy">
 				 </a>
-           <div class="footer-logo">
-         <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy ссылка"> Сделано в HTML Academy 2017</a>
+           <div class="footer-logo"> Сделано в
+             <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy ссылка"> HTML Academy 2017</a>
            </div>
        </div>
    </footer>
 
 </div>
 <script>
+/*
 var seach = document.querySelector(".seach");
 var popup = document.querySelector(".modal-seach");
-var close = popup.querySelector(".modal-close");
-var form = popup.querySelector("form");
-var login = popup.querySelector("[name=seach]");
+var close = popup.querySelector(".modal-close-seach");
+ var form = popup.querySelector("form");
+var login = popap.querySelector("[name=seach]");
 
 seach.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
-  seach.focus();
+  login.focus();
 });
 close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
   });
-  form.addEventListener("submit", function (evt) {
+  */
+
+var link = document.querySelector(".login");
+var popup = document.querySelector(".modal-login");
+var close = popup.querySelector(".modal-close-login");
+var form = popup.querySelector("form");
+var login = popup.querySelector("[name=login]");
+var password = popup.querySelector("[name=password]");
+
+link.addEventListener("click", function (evt) {
+ evt.preventDefault();
+ popup.classList.add("modal-show");
+ login.focus();
+});
+  close.addEventListener("click", function (evt) {
     evt.preventDefault();
+    popup.classList.remove("modal-show");
   });
+
 </script>
    </body>
 </html>
