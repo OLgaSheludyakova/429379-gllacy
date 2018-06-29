@@ -45,7 +45,7 @@
                                       <label for="seach-field" class="visually-hidden">поиск</label>
                                        <input type="text" name="seach" id="seach-field" placeholder="Что ищем?">
                                   </form>
-                                  <button class="modal-close-seach"aria-label="кнопка закрытия поля поиска"></button>
+
                                 </div>
 
               <button class="button login" type="button" aria-label="вход"> Вход </button>
@@ -67,12 +67,12 @@
                                            <button class="button" aria-label="Вход">Войти</button>
 
                                             <div class="a">
-                                            <a href="https://echo.htmlacademy.ru" aria-label="Забыли пароль?">Забыли пароль?</a>
-                                            <a href="https://echo.htmlacademy.ru" aria-label="Новая регистрация">Новая регистрация</a>
+                                            <a href="https://echo.htmlacademy.ru" aria-label="Забыли пароль?"><span>Забыли пароль?</span></a>
+                                            <a href="https://echo.htmlacademy.ru" aria-label="Новая регистрация"><span>Новая регистрация</span></a>
                                             </div>
 
                                       </form>
-                                        <button class="modal-close-login"aria-label="кнопка закрытия поля входа"></button>
+                                        <button class="modal-close-login" type="button" aria-label="кнопка закрытия поля входа"></button>
                                  </div>
 
             <a href="catalog.html" class="button basket-main"  aria-label="корзина">Пусто</a>
@@ -97,21 +97,19 @@
               <h2>Крем-брюле и пломбир с малиновым джемом</h2>
 
                 <img src="img/ice-cream.png" width="1045" height="881" alt="мороженки">
-
-
-
+                  <button class="button" type="button" aria-label="заказ мороженого">Давайте оба!</button>
               </li>
 
               <li class="slide-2">
                 <h2>Шоколадный пломбир и лимонный сорбет</h2>
                 <img src="img/ice-cream%20slid2.png" width="1065" height="859" alt="мороженки">
-
+           <button class="button" type="button" aria-label="заказ мороженого">Давайте оба!</button>
               </li>
 
               <li class="slide-3">
                 <h2>Пломбир с помадкой и клубничный щербет</h2>
                 <img src="img/ice-cream%20slid3.png" width="1079" height="854" alt="мороженки">
-
+               <button class="button" type="button" aria-label="заказ мороженого">Давайте оба!</button>
               </li>
 
             </ul>
@@ -119,15 +117,8 @@
         <button class="slides" type="button" aria-label="переключение слайдов-слайд1"></button>
         <button class="slides" type="button" aria-label="переключение слайдов-слайд2"></button>
         <button class="slides" type="button" aria-label="переключение слайдов-слайд3"></button>
-
-
       </div>
-<button class="button" type="button" aria-label="заказ мороженого">Давайте оба!</button>
-        </div>
-
-
-
-
+      </div>
           <h2 class="visually-hidden">Главное</h2>
           <div class="present">
               <ul class="present-list">
@@ -240,7 +231,7 @@
                 <div class="contacts">
                     <p>Адрес главного офиса<br>
                       и офлайн-магазина:<br>
-                  <span class="contact">ул.Большая Конюшенная<br> 19/8,Санкт-Петербург</span></p>
+                  <b class="contact">ул.Большая Конюшенная<br> 19/8,Санкт-Петербург</b></p>
 
                   <p>  Дата заказов по телефону:<br>
                       <a class="phone" href="tel:+7(812)4502525" aria-label="Номер телефона">8 812 450 25 25</a>
@@ -270,7 +261,7 @@
 
                               <button class="button" type="submit" aria-label="Отправить" >Отправить</button>
                           </form>
-                               <button class="modal-close" type="button" aria-label="закрыть">X</button>
+
                      </div>
                    </div>
 
@@ -303,7 +294,7 @@
       <div class="documents">
           <ul class="documentation">
 
-						<li><a href="index.html" aria-label="Информация для поставщиков">Для поставщиков</a></li>
+						<li><a href="index.html" aria-label="Информация для поставщиков"><b>Для поставщиков</b></a></li>
 						<li><a href="index.html" aria-label="Информация о производстве">О производстве</a></li>
        </ul>
        <ul class="documentation">
@@ -324,42 +315,8 @@
    </footer>
 
 </div>
-<script>
-/*
-var seach = document.querySelector(".seach");
-var popup = document.querySelector(".modal-seach");
-var close = popup.querySelector(".modal-close-seach");
- var form = popup.querySelector("form");
-var login = popap.querySelector("[name=seach]");
 
-seach.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.add("modal-show");
-  login.focus();
-});
-close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-  });
-  */
+<script src="js/script.js"></script>
 
-var link = document.querySelector(".login");
-var popup = document.querySelector(".modal-login");
-var close = popup.querySelector(".modal-close-login");
-var form = popup.querySelector("form");
-var login = popup.querySelector("[name=login]");
-var password = popup.querySelector("[name=password]");
-
-link.addEventListener("click", function (evt) {
- evt.preventDefault();
- popup.classList.add("modal-show");
- login.focus();
-});
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-  });
-
-</script>
    </body>
 </html>
