@@ -721,13 +721,15 @@ label input[type="checkbox"]::before {
 
 }
  .feedback {
-  width: 240px;
-  height: 45px;
-  position: absolute;
-  right: 57px;
-  bottom: 100px;
-  margin: auto;;
+padding: 10px 29px;
+position: absolute;
+right: 53px;
+bottom: 120px;
+  margin: auto;
 
+}
+.modal-show-feedback {
+  display: block;
 }
 .modal-feedback b {
   color:  #323232;
@@ -1367,4 +1369,3 @@ background-color: #91cfe9;
 #product-3:checked ~ .site-wrapper .navigation-buttons .button {
   background-color: #b1a29d;
 }
-
