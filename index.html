@@ -9,7 +9,10 @@
   </head>
   <body>
 
-<div class="wrapper">
+<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+<div class="site-wrapper">
 
       <header class="main-header ">
            <div class="header-container">
@@ -89,36 +92,61 @@
 
       <main class="container ">
 
+
           <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
 
         <div class="caption">
+          <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+          </div>
             <ul class="ice-cream-slides">
-              <li class="slide-1">
-              <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+             <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">
+                Крем-брюле и пломбир с малиновым джемом
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
 
-                <img src="img/ice-cream.png" width="1045" height="881" alt="мороженки">
-                  <button class="button" type="button" aria-label="заказ мороженого">Давайте оба!</button>
-              </li>
+             <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">
+                Шоколадный пломбир и лимонный сорбет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
 
-              <li class="slide-2">
-                <h2>Шоколадный пломбир и лимонный сорбет</h2>
-                <img src="img/ice-cream%20slid2.png" width="1065" height="859" alt="мороженки">
-           <button class="button" type="button" aria-label="заказ мороженого">Давайте оба!</button>
-              </li>
-
-              <li class="slide-3">
-                <h2>Пломбир с помадкой и клубничный щербет</h2>
-                <img src="img/ice-cream%20slid3.png" width="1079" height="854" alt="мороженки">
-               <button class="button" type="button" aria-label="заказ мороженого">Давайте оба!</button>
-              </li>
+              <li class="slider-item slide" id="slide3">
+              <h3 class="slide-title">
+                Пломбир с помадкой и клубничный щербет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
 
             </ul>
-      <div class="button-slides">
-        <button class="slides" type="button" aria-label="переключение слайдов-слайд1"></button>
-        <button class="slides" type="button" aria-label="переключение слайдов-слайд2"></button>
-        <button class="slides" type="button" aria-label="переключение слайдов-слайд3"></button>
+
       </div>
-      </div>
+        <div class="modal modal-feedback">
+               <h4 class="visually-hidden">модальное окно обратная связь</h4>
+  								      <b>Мы обязательно вам ответим!</b>
+                        <form action="https://echo.htmlacademy.ru" method="post">
+                            <p> <label for="feedback-field" class="visually-hidden"></label>
+
+  				                  <input type="text" name="feedback" id="feedback-field" placeholder="Как вас зовут?"></p>
+
+                             <p> <label for="email-answer" class="visually-hidden"></label>
+
+                             <input type="email" name="email" id="email-answer" placeholder="Ваша почта для ответа">
+                             </p>
+
+                            <p>
+                              <textarea rows="8" placeholder="Напишите что-нибудь"></textarea>
+                            </p>
+
+                              <button class="button" type="submit" aria-label="Отправить" >Отправить</button>
+                          </form>
+
+                     </div>
           <h2 class="visually-hidden">Главное</h2>
           <div class="present">
               <ul class="present-list">
@@ -226,7 +254,8 @@
         <section class="map">
           <div>
   						<h3 class="visually-hidden"> Карта</h3>
-                <img src="img/carta.jpg" width="1200"  height="430"   alt="карта">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6009493701051!2d30.32083355079417!3d59.93876356896275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fc9ddd7b5%3A0x3b5582a5342a4e47!2z0JPQvdC10LfQtNC-!5e0!3m2!1sru!2sru!4v1530521736199" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
           </div>
                 <div class="contacts">
                     <p>Адрес главного офиса<br>
@@ -242,27 +271,7 @@
                   <button class="button feedback" aria-label="контактная информация">Форма обратной связи</button>
 
 
-                   <div class="modal modal-feedback">
-               <h4 class="visually-hidden">модальное окно обратная связь</h4>
-  								      <b>Мы обязательно вам ответим!</b>
-                        <form action="https://echo.htmlacademy.ru" method="post">
-                            <p> <label for="feedback-field" class="visually-hidden"></label>
 
-  				                  <input type="text" name="feedback" id="feedback-field" placeholder="Как вас зовут?"></p>
-
-                             <p> <label for="email-answer" class="visually-hidden"></label>
-
-                             <input type="email" name="email" id="email-answer" placeholder="Ваша почта для ответа">
-                             </p>
-
-                            <p>
-                              <textarea rows="8" placeholder="Напишите что-нибудь"></textarea>
-                            </p>
-
-                              <button class="button" type="submit" aria-label="Отправить" >Отправить</button>
-                          </form>
-
-                     </div>
                    </div>
 
             </section>
@@ -311,12 +320,15 @@
 
              <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy ссылка">Сделано в<span> HTML Academy 2017</span></a>
            </div>
-       </div>
+
    </footer>
 
 </div>
 
-<script src="js/script.js"></script>
+
+    <script src="js/login.js"></script>
+    <script src="js/seach.js"></script>
+    <script src="js/feedback.js"></script>
 
    </body>
 </html>
