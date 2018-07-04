@@ -21,7 +21,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.site-wrapper {    outline: 1px solid #ff0000;
+.site-wrapper {
   width:1200px;
   margin: 0 auto;
   padding: 0 27px;
@@ -1343,12 +1343,11 @@ background-color: #91cfe9;
 
 /*mozilla*/
 .caption {
-  outline: 2px solid blue;
   display: block;
   height: 620px;
 }
 .present {
-  display: block;outline: 2px solid green;
+  display: block;
 }
 .navigation-buttons {
 right: 0;
