@@ -21,11 +21,10 @@ img {
   max-width: 100%;
   height: auto;
 }
-.site-wrapper {
-  max-width:1200px;
+.site-wrapper {    outline: 1px solid #ff0000;
+  width:1200px;
   margin: 0 auto;
   padding: 0 27px;
-  min-width: 900px;
   background-color: #849d8f;
   background-image: url("img/ice-cream.png");
   background-repeat: no-repeat;
@@ -48,7 +47,7 @@ img {
   position: relative;
 }
 .main-header-catalog {
-  width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -367,12 +366,7 @@ p span,
 .caption .button:hover {
   color: #ffffff;
 }
-.present-list {
-    width: 100%;
-}
-.catalog-list {
-    width: 100%;
-}
+
 .present-list h3 {
 	 font-size: 35px;
    line-height: 41px;
@@ -520,7 +514,7 @@ p span,
   font-weight:normal;
 }
 .blog-message {
-    width: 100%;
+
     margin-bottom: 40px;
     display: flex;
     position: relative;
@@ -888,10 +882,7 @@ label input[type="checkbox"]::before {
 .present-item img {
   border-radius: 20px;
 }
-.present,
-.catalog {
-  width: 100%
-}
+
 .catalog {
   margin-bottom: 40px;
   margin-top: -5px;
@@ -959,7 +950,8 @@ input {
   box-sizing: border-box;
 }
 .map {
-  width: 105%;
+  width: 1200px;
+height: 420px;
   position: relative;
   margin-left:-27px;
   background-image: url(../img/carta.jpg);
@@ -1027,7 +1019,7 @@ input {
   margin-bottom: 30px;
 }
 .catalog-list-all {
-  width: 100%;
+
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1347,4 +1339,19 @@ background-color: #91cfe9;
 }
 .modal-show {
   display: block;
+}
+
+/*mozilla*/
+.caption {
+  outline: 2px solid blue;
+  display: block;
+  height: 620px;
+}
+.present {
+  display: block;outline: 2px solid green;
+}
+.navigation-buttons {
+right: 0;
+  position: absolute;
+  top: 20px;
 }
