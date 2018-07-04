@@ -13,7 +13,7 @@
        <header class="main-header-catalog">
            <div class="header-container">
 
-              <a class="main-header-logo" href="#" aria-label="логотип магазина Глейси">
+              <a class="main-header-logo" href="index.html" aria-label="логотип магазина Глейси">
                   <img src="img/logo.png" width="154" height="64"  alt="логотип магазина Глейси">
               </a>
                <nav class="main-navigation">
@@ -101,23 +101,23 @@
 
          <div class="header-contacts">
                       <p class="time-work">с 10 до 20,ежедневно</p>
-								      <a href="tel:+7(812)4502525" aria-label="Номер телефона">8 812 450 25 25</a>
+								      <a href="tel:+7(812)4502525" class="phone" aria-label="Номер телефона">8 812 450 25 25</a>
         </div>
 
  </header>
 
     <main class="container">
       <ul class="breadcrumbs">
-        <li><a href="index.html" aria-label="ссылка на главную">главная >></a></li>
-        <li><a href="№" aria-label="ссылка на каталог">каталог >></a></li>
-        <li class="breadcrumbs-current">сливочное</li>
+        <li><a href="index.html" aria-label="ссылка на главную">Главная >></a></li>
+        <li><a href="№" aria-label="ссылка на каталог">Каталог >></a></li>
+        <li class="breadcrumbs-current">Сливочное</li>
       </ul>
-			<h2>Сливочное мороженое</h2>
+			<h2 class="ice-cream">Сливочное мороженое</h2>
 
   <form action="https://echo.htmlacademy.ru" method="post" class="field">
 
   <div class="filter">
-    <label>Сортировка</label><br>
+    <label class="label">Сортировка</label>
       <select name="top-ice"  class="top-ice">
         <option>по популярности</option>
 				<option>сначала недорогие</option>
@@ -127,7 +127,7 @@
     </div>
 
     <div class="filter">
-      <label >Цена 100руб-500руб</label>
+      <label class="label" >Цена 100руб-500руб</label>
      <div  class="top-ice-price">
       <input type="range" class="range">
       <input type="range" class="range">
@@ -135,7 +135,7 @@
    </div>
 
    <div  class="filter">
-      <label>Жирность</label>
+      <label class="label">Жирность</label>
       <div class=" bold-top-ice">
          <input type="radio" id="0" name="bold-ice-cream" value="0%">
          <label for="0">0%</label>
@@ -152,7 +152,7 @@
       </div>
 
 <div  class="filter">
-<label>Наполнители</label>
+<label class="label">Наполнители</label>
      <div  class="variety">
 
         <input type="checkbox"  checked id="chockolate">
@@ -177,14 +177,14 @@
 </section>
 			<div class="catalog-content">
           <ul class="catalog-list-all" >
-               <li class="item">
+            <li class="item">
 
-                      <img src="img/1.jpg" width="267"  height="267"   alt="ice">
-                      <span class="price-item">310₽</span>
-                      <span class="kg">/кг</span>
-                      <p><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></p>
-								 <button type="button" class="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
-                  </li>
+                   <img src="img/1.jpg" width="267"  height="267"   alt="ice">
+                   <span class="price-item">310₽</span>
+                   <span class="kg">/кг</span>
+                   <p><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></p>
+              <button type="button" class="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+               </li>
 
               <li class="item">
 
@@ -256,15 +256,12 @@
                    <p><span>Сливочное с кусочками черного шоколада</span></p>
 							 <button type="button" class="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
 						</li>
-              <li class="item"><img src="img/12.jpg" width="267"  height="267"  alt="ice">
+              <li class="item"><img src="img/12.jpg" width="100%"  height="267"  alt="ice">
                    <span class="price-item">420₽</span>
 								   <span class="kg">/кг</span>
                    <p><span>Сливочное с мятным сиропом</span></p>
 							 <button type="button" class="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
 						</li>
-
-
-
           </ul>
 			</div>
       <div class="catalog-buttons">

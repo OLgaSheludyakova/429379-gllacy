@@ -23,24 +23,23 @@ img {
 .site-wrapper {
   max-width:1200px;
   margin: 0 auto;
-  padding: 0 27px;       outline: 2px solid #fff000;
+  padding: 0 27px;
   min-width: 900px;
   background-color: #849d8f;
   background-image: url("img/ice-cream.png");
   background-repeat: no-repeat;
   background-position: top center;
+  position: relative;
 
   transition: background-image 0.5s ease, background-color 0.5s ease;
-
 }
-.container {
-  width: 100%;
-}
-
 .main-header {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
   background-color: transparent;
   z-index: 1;
-  margin-bottom: -65px;
+  margin-bottom: -75px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -53,8 +52,9 @@ img {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  padding-top: 10px;
+  margin-bottom: -5px;
 }
-
 .main-header-logo {
   width: 154px;
   height: 64px;
@@ -63,7 +63,7 @@ img {
 .modal-basket{
   display: none;
 }
-  a {
+a {
   display: block;
   text-decoration: none;
   color: #ffffff;
@@ -76,21 +76,20 @@ img {
 .site-navigation>li>a {
   border-radius: 30px;
 }
-    .main-header span,
-    .main-header-catalog span,
-    p span,
-  .footer-logo span {
-      border-bottom: 1px solid #a7bdb1;
-       }
-  .footer-logo a:hover span {
-      border-bottom: 1px solid #f48468;
+.main-header span,
+.main-header-catalog span,
+p span,
+.footer-logo span {
+   border-bottom: 1px solid #a7bdb1;
+}
+.footer-logo a:hover span {
+   border-bottom: 1px solid #f48468;
+}
+.footer-logo a {
+   font-size: 12px;
+   line-height: 18px;
+   font-weight: normal;
           }
-          .footer-logo a {
-            font-size: 12px;
-  line-height: 18px;
-            font-weight: normal;
-          }
-
 .catalog-active {
   text-decoration: none;
 }
@@ -100,7 +99,6 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 .main-navigation a:hover {
 	color: #000;
@@ -109,7 +107,6 @@ img {
 .main-navigation a:hover>span {
   border: none;
 }
-
 .site-navigation a:active {
 	color: #fff;
 	background-color:#d07058;
@@ -139,9 +136,7 @@ img {
 	color: #323232;
   background-color: #fff;
   box-shadow: 0 20px 20px #57655d;
-
- }
-
+}
 .submenu a:visited; {
 	background-color: #d07058 ;
   color: #ffffff;
@@ -164,14 +159,12 @@ img {
 
 .main-navigation .button,
 .navigation-buttons .button {
-
   font-size: 14px;
   line-height: 20px;
   font-weight: normal;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
-
   border: none;
   border-radius:30px;
   position: relative;
@@ -188,14 +181,13 @@ img {
   background-repeat:  no-repeat;
   background-position:  center;
   position: relative;
-
 }
 .modal-close-login {
-  width: 96px;
-  height: 35px;
-  position: absolute;
-  top: -46px;
-  left: 120px;
+   width: 96px;
+   height: 35px;
+   position: absolute;
+   top: -38px;
+   left: 120px;
    background-image: url(../img/entrance.svg);
    background-repeat: no-repeat;
    background-position: 10px;
@@ -210,9 +202,7 @@ img {
 }
 .seach:hover + .modal-seach {
   display: block;
-
 }
-
 .login::before {
   content:"";
   width: 20px;
@@ -222,7 +212,6 @@ img {
   background-position:  center;
   position: absolute;
   left:8px;
-
 }
 .login:hover::before {
   background-image: url(../img/entrance.svg);
@@ -239,7 +228,6 @@ img {
   position: absolute;
   left:8px;
 }
-
 .basket-catalog::before {
   content:"";
   width: 20px;
@@ -253,12 +241,6 @@ img {
 .navigation-buttons .basket-catalog:hover + .modal-basket {
   display: block;
 }
-/*
-.basket-main:hover::before {
-  background-image: url(../img/basket-red.svg);
-  position: absolute;
-  left: 8px;
-}*/
 .navigation-buttons .login,
 .navigation-buttons .basket-main,
 .navigation-buttons .basket-catalog {
@@ -275,34 +257,46 @@ img {
   background-color: #ffffff;
   color: #323232;
 }
-
 .time-work {
 	 font-size: 14px;
    line-height: 16px;
 }
-.phone {
-	 font-size: 22px;
+ .contacts .phone {
+   font-size: 22px;
    line-height: 24px;
+    color:   #323232;
+  	font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.phone {
+  font-size: 22px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
 }
 .modal a {
 	 font-size: 13px;
    line-height: 24px;
 	 color: #323232;
    font-weight:normal;
-
 }
-
 .container .button,
 .modal .button {
 	 font-size: 18px;
    line-height: 24px;
 	 color: #fff;
 	 font-weight: bold;
-	 background-color: #f16742;
-   background-image: linear-gradient(to top,#e74a35,#f26843);
+   background-image: linear-gradient(to top,#ca3824,#f26843);
 	 border:none;
    box-shadow: 0 2px 2px #323232;
    border-radius:30px;
+   outline: none;
+   cursor: pointer;
+}
+.container .button:hover,
+.modal .button:hover {
+  background-image: linear-gradient(to top,#e74a35,#f26843);
 }
 .modal-feedback .button {
   width: 137px;
@@ -310,14 +304,11 @@ img {
   position: absolute;
   right: 30px;
 }
-
-
-.modal .button:hover {
-  background-color:#f48468;
-  color: #ffffff;
-  cursor: pointer;
+.container .button:active,
+.modal .button:active{
+  background-image: linear-gradient(to bottom, #e74a35,#f26843);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
-
 .catalog-active a {
 	padding: 10px;
 	font-size: 16px;
@@ -326,24 +317,18 @@ img {
   background-color: #f16742;
   text-decoration: none;
 }
-
 .caption .button:hover {
   color: #ffffff;
-  background-image: linear-gradient(to bottom,#f48568,#ec6f5e);
-  box-shadow: 0 2px 2px #323232;
 }
-.caption .button:active {
-  box-shadow:inset 0 2px 2px #323232;
-  background-image: linear-gradient(to top,#e74a35,#f26843);
-}
-
 .present-list {
+    width: 100%;
+}
+.catalog-list {
     width: 100%;
 }
 .present-list h3 {
 	 font-size: 35px;
    line-height: 41px;
-
 }
 .present-list p {
 	 font-size: 18px;
@@ -362,18 +347,10 @@ img {
   background-image: url(../img/chocolate.jpg);
   background-repeat: no-repeat;
   background-position: center;
-
-}
-.present-item .button:hover {
-  background-color:#f48468;
-}
-.catalog-list {
-    width: 100%;
 }
 .catalog-list p {
 	font-weight:normal;
 }
-
 .info {
   font-size: 16px;
   line-height: 22px;
@@ -390,9 +367,9 @@ img {
   margin-bottom: 40px;
 }
 .info .about-shop  {
-padding: 0;
-margin: 0;
-padding-bottom: 25px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 25px;
 }
 .info .container {
   margin: 0;
@@ -463,16 +440,15 @@ padding-bottom: 25px;
 }
 .info .about-shop,
 .blog a {
-	  font-size: 24px;
-    line-height: 30px;
-    color: #323232;
-    font-weight: bold;
+	font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  font-weight: bold;
 }
 .blog a {
   width: 285px;
 	text-decoration: underline;
 }
-
 .catalog-list,
 .present-list {
      list-style: none;
@@ -491,12 +467,11 @@ padding-bottom: 25px;
   margin: 0;
   background-color: #fff;
   background-image: url(../img/strawberry.jpg);
-  background-repeat:  repeat;
-  background-position:  center;
+  background-repeat:  no-repeat;
+  background-position:center;
   color:#323232;
   font-weight:normal;
 }
-
 .blog-message {
     width: 100%;
     margin-bottom: 40px;
@@ -506,7 +481,6 @@ padding-bottom: 25px;
 .navigation-buttons .button {
   background-color: #9db1a5;
 }
-
 .contacts {
   padding: 30px 25px;
   margin-right: 27px;
@@ -543,15 +517,14 @@ padding-bottom: 25px;
     font-weight:normal;
 }
 .button-apply {
-  width: 145px;
-  height: 40px;
+  padding: 0 28px;
+  height: 35px;
   border: 2px solid #fff;
   background-color: #9cb0a4;
   color: #ffffff;
-  font-size: 16px;
-  line-height: 18px;
+
   border-radius: 30px;
-  margin-top: 18px;
+  margin-top: 32px;
 }
 .button-apply:hover {
   background-color: #ffffff;
@@ -600,11 +573,6 @@ label input[type="checkbox"]::before {
  right: 0;
  top: -5px;
 }
-.slides {
-   border-radius: 50%;
-}
-
-
 .container a:hover,
 .main-footer a:hover,
 .modal a:hover,
@@ -625,11 +593,16 @@ label input[type="checkbox"]::before {
 .bold-top-ice,
 .top-price-ice,
 .variety {
-  padding: 7px 18px;
-  padding-left: 8px;
+  padding: 5px 15px;
   background-color: #9db1a5;
   color: #ffffff;
   border-radius:30px;
+  margin-bottom: 7px;
+  padding-left: 0;
+}
+
+.bold-top-ice {
+  padding-left: 0;
 }
 .top-ice:hover {
   color:  #323232;
@@ -656,7 +629,6 @@ label input[type="checkbox"]::before {
   border: 1px solid  #d3d3d2;
   padding: 10px;
 }
-
 .modal-login {
   width: 280px;
   height: 200px;
@@ -698,16 +670,12 @@ label input[type="checkbox"]::before {
   display:none;
   height: 440px;
   width: 480px;
-  position: absolute;
+  position: fixed;
+  top: 500px;
   left: 50%;
   margin: -225px;
   z-index: 10;
-
 }
-
-.feedback:hover + .modal-feedback /{
-  display: block;
-  }
 .modal-feedback input,
 .modal-feedback textarea {
    border: 1px solid  #9db1a5;
@@ -718,18 +686,14 @@ label input[type="checkbox"]::before {
 .modal-feedback textarea {
 	width: 430px;
   box-sizing: border-box;
-
 }
- .feedback {
-padding: 10px 29px;
-position: absolute;
-right: 53px;
-bottom: 120px;
+.feedback {
+  padding: 10px 29px;
+  position: absolute;
+  right: 53px;
+  bottom: 100px;
   margin: auto;
 
-}
-.modal-show-feedback {
-  display: block;
 }
 .modal-feedback b {
   color:  #323232;
@@ -739,20 +703,6 @@ bottom: 120px;
 .modal-feedback p {
 	margin-left:0;
 }
-/*
-.modal-close-seach {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: -53px;
-  left: 270px;
-   background-image: url(../img/Лупа3.png);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-color: #fff;
-   border-radius: 50%;
-   border: none;
-}*/
 .modal-basket {
   width: 540px;
   background-color: #f8f7f4;
@@ -786,29 +736,7 @@ bottom: 120px;
 .caption {
   position: relative;
 }
-.caption img {
-  width: 1146px;
-  margin-left: -40px;
-  margin-right: 40px;
-}
-.caption h2,
-.caption .button {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-}
-.slide-1 h2,
-.slide-2 h2 ,
-.slide-3 h2  {
-  left:240px;
-  top:390px;
-}
 
-.button-slides {
-  position: absolute;
-  left:0;
-  top: 550px;
-}
 .present-item {
   position: relative;
   margin-bottom: 30px;
@@ -838,7 +766,6 @@ bottom: 120px;
   position: relative;
   margin-right: 26px;
   width: 23%;
-
 }
 .catalog-list-all .item {
   margin-bottom: 40px;
@@ -866,7 +793,6 @@ bottom: 120px;
   left: 108px;
   font-size: 25px;
   top: 220px;
-
 }
 .price-item {
 	 font-size: 43px;
@@ -874,13 +800,8 @@ bottom: 120px;
    text-shadow: 0 1px 3px #313235;
    z-index: 2;
    left: 0;
-   top: 204px;
+   top: 210px;
 }
-
-.modal-show {
-  display: block;
-}
-/* ----- Сеточные стили ----- */
 .catalog-list .item:last-child {
   margin-right: 0;
 }
@@ -893,37 +814,28 @@ bottom: 120px;
 }
 .site-navigation {
   display: flex;
-
 }
 .site-navigation a {
   padding: 10px;
   margin-right: 5px;
 }
-
 .header-contacts {
   position: absolute;
   right: 0;
-  top: 60px;
+  top: 70px;
   width: 165px;
   text-align: right;
   z-index: 1;
+}
+.header-contacts p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
 }
 .ice-cream-slides h2 {
 	 font-size: 60px;
    line-height: 60px;
    width: 670px;
-}
-
-.slide-1,
-.slide-2,
-.slide-3 {
-  position: relative;
- height: 630px;
- margin: 0;
-}
-.slide-2,
-.slide-3 {
-  display: none;
 }
 .present-item img {
   border-radius: 20px;
@@ -933,11 +845,11 @@ bottom: 120px;
   width: 100%
 }
 .catalog {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
+  margin-top: -5px;
 }
 .present-list,
 .catalog-list {
-
   padding: 0;
   display: flex;
  justify-content: space-between;
@@ -945,8 +857,6 @@ bottom: 120px;
 .present-item .button {
  padding: 11px 22px;
 }
-
-
 textarea {
   height: 150px;
   width: 425px;
@@ -954,9 +864,7 @@ textarea {
 textarea,
 input {
   border-radius: 5px;
-
 }
-
 .post {
  width: 49%;
  height: auto;
@@ -969,12 +877,11 @@ input {
   margin-left:26px;
   padding: 0;
  }
-
 .message {
   font-size: 16px;
   line-height: 22px;
   width:98%;
-  padding: 25px;
+  padding: 20px;
   padding-bottom: 40px;
   padding-top: 30px;
   background-color: #ffffff;
@@ -982,7 +889,7 @@ input {
   color: #323232;
   box-sizing: border-box;
   font-weight:normal;
-margin: 6px;
+  margin: 6px;
   z-index: 1;
 }
 .message p {
@@ -1003,76 +910,91 @@ margin: 6px;
   width: 350px;
   box-sizing: border-box;
 }
-
 .map {
   width: 105%;
   position: relative;
   margin-left:-27px;
+  background-image: url(../img/carta.jpg);
 }
 
-.contacts .phone {
-    color:   #323232;
-  	font-weight: bold;
-}
 .contacts .button {
   width: 253px;
   height: 47px;
 }
-
 .contacts p {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .main-footer ,
 .documents {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.main-footer {
 
+  padding: 20px 0;
 }
 .catalog-buttons {
-  margin-top: 35px;
+  margin-top: 50px;
   margin-left:970px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+}
+.catalog-buttons .buttons:hover {
+  background-color: #9db1a5;
+}
+.catalog-buttons .buttons:active,
+.active {
+  background-color: #fff;
+  color: #000;
 }
 .filter {
-margin-right: 15px;
-margin-bottom: 15px;
+  margin-right: 15px;
 }
 .field {
   display: flex;
   flex-wrap: wrap;
-  outline: 1px solid pink;
-  margin-bottom: 25px;
-  font-size: 16px;
-  line-height: 18px;
+
+  margin-bottom: 20px;
   font-weight: normal;
-
 }
-.field label {
+.label {
+  display: block;
   margin-left: 15px;
+  margin-bottom: 10px;
 }
-
 .breadcrumbs li {
   display:inline-block;
   margin-right: 5px;
-
+}
+.catalog-content {
+  margin: 0;
+  padding: 0;
+}
+.ice-cream {
+  font-size: 35px;
+  line-height: 41px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
 }
 .catalog-list-all {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  outline: 2px solid blue;
+
   list-style: none;
   position: relative;
-
 }
 .catalog-list-all .item {
   width:23%;
   margin-right:26px;
-
+}
+.catalog-list-all .item:nth-child(4n) {
+  margin-right: 0;
 }
 .catalog-list .item img,
 .catalog-list-all .item img {
@@ -1083,6 +1005,7 @@ margin-bottom: 15px;
 	text-align: center;
   margin: 0;
   margin-top: 7px;
+  font-weight: normal;
 }
 .catalog-list-all .item .button,
 .catalog-list .item .button {
@@ -1091,7 +1014,6 @@ margin-bottom: 15px;
 	display: none;
   margin: 20px auto;
 }
-
 .catalog-list-all .item:hover,
 .catalog-list .item:hover {
 	background-color:#9cb0a4;
@@ -1105,10 +1027,6 @@ margin-bottom: 15px;
 .catalog-list-all .item:hover > .button,
 .catalog-list .item:hover > .button {
 	display: block;
-
-	}
-.catalog-list-all .item:nth-child(4n) {
-  margin-right: 0;
 }
 .social-button {
   width: 35px;
@@ -1129,7 +1047,6 @@ background-color: #91cfe9;
   width: 190px;
   margin-left: -40px;
   margin-right: 10px;
-
 }
 .social-button {
   margin-right: 12px;
@@ -1153,19 +1070,20 @@ background-color: #91cfe9;
 .filter select {
   background-color: #9db1a5;
   border-radius: 20px;
+  padding: 5px 15px;
 }
 .variety input {
   display: none;
 }
 .variety label::before {
   content: "";
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
  background-image: url(../img/checkbox-off.svg);
  background-repeat: no-repeat;
  display: inline-block;
   vertical-align: middle;
-  margin-right: 10px;
+  margin-right: 13px;
   margin-left: 15px;
 }
 .variety input:checked+label::before {
@@ -1184,8 +1102,8 @@ background-color: #91cfe9;
   display: inline-block;
   vertical-align: middle;
   margin: 0;
-  margin-left: 10px;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 20px;
   background-image: url(../img/radio-off.svg);
 }
 .bold-top-ice input:checked+label::before {
@@ -1193,10 +1111,10 @@ background-color: #91cfe9;
 }
 .top-ice-price {
   width: 218px;
-  height: 40px;
+  background-color:#aabcb2;
   border-radius: 30px;
-  background-color: #aabcb2;
-  padding: 5px;
+  border: 4px solid #aabcb2;
+  padding-bottom: 5px;
   padding-left: 25px;
 
 }
@@ -1205,7 +1123,6 @@ background-color: #91cfe9;
   width: 100px;
   height: 3px;
   outline: none;
-
 }
 .range::-webkit-slider-thumb {
     -webkit-appearance:none;
@@ -1218,43 +1135,36 @@ background-color: #91cfe9;
 .range:last-child {
   margin-left: -35px;
 }
-
-
-
-
-  .caption {
+.caption {
   position: relative;
-
   padding-top: 521px;
-
   text-align: center;
   color: #ffffff;
 }
 .ice-cream-slides {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 .slide-title {
   width: 700px;
   margin: 0 auto;
   margin-bottom: 127px;
-
   margin-top: -130px;
-
   font-size: 60px;
   line-height: 60px;
   font-weight: bold;
 }
 .caption .button {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  padding: 2px 40px;
    font-size: 32px;
    line-height: 60px;
    border-radius:50px;
-   left:425px;
+   left:435px;
    top: 540px;
-   width: 277px;
-   height: 65px;
    text-shadow:0 2px 5px #323232;
 }
 .slide-button {
@@ -1275,15 +1185,12 @@ background-color: #91cfe9;
   border-radius: 50px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
-
   cursor: pointer;
 }
 .slide-button:hover {
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-
 }
-
 .slide-button:active {
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
@@ -1293,25 +1200,23 @@ background-color: #91cfe9;
   width: 20px;
   height: 20px;
   margin-right: 8px;
-
-
-
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
 }
+.slider-controls label:hover {
+  background-color: #b2c1b7;
+}
 .slider-controls {
   position: absolute;
   bottom: -70px;
   left: 0;
-  z-index: 20;
-
+  z-index: 8;
   font-size: 0;
 }
 .visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
 
@@ -1344,15 +1249,12 @@ background-color: #91cfe9;
   background-color: #9d8b84;
   background-image: url(../img/ice-cream%20slid3.png);
 }
-
-
 .site-wrapper::before,
 .site-wrapper::after {
   content: "";
 
   visibility: hidden;
 }
-
 .site-wrapper::before {
   background-image: url("img/slider-item2.png");
 }
@@ -1368,4 +1270,26 @@ background-color: #91cfe9;
 }
 #product-3:checked ~ .site-wrapper .navigation-buttons .button {
   background-color: #b1a29d;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+ 100% {
+    transform: translateY(1600px);
+  }
+}
+.up {
+  animation:bounce 2s forwards;
+}
+.overlay {
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+  display: none;
+}
+.modal-show {
+  display: block;
 }
